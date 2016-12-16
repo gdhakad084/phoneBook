@@ -1,0 +1,32 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <ImageView
+        android:id="@+id/image1234"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/unnamed" />
+
+    <TextView
+        android:id="@+id/text1234"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image12345"
+        android:layout_marginLeft="29dp"
+        android:layout_toRightOf="@+id/image1234"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/image12345"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/image1234"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:src="@android:drawable/stat_sys_phone_call" />
+
+</RelativeLayout>

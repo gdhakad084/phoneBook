@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/imagebuttonimage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="28dp" 
+        android1:src="@drawable/unnamed"
+        android1:scaleType="centerCrop"
+       
+        />
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/quickContactBadge1"
+        android:ems="10"
+        android:hint="Enter Your Name" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentRight="true"
+        android1:layout_toRightOf="@+id/button3"
+        android:text="Cancel" />
+
+    <EditText
+        android1:id="@+id/editText13"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentRight="true"
+        android1:layout_below="@+id/editText12"
+        android1:layout_marginTop="27dp"
+        android1:ems="10"
+        android1:hint="Enter Email Adress"
+        android1:inputType="textEmailAddress" />
+
+    <EditText
+        android1:id="@+id/editText12"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBottom="@+id/imagebuttonimage"
+        android1:layout_alignParentRight="true"
+        android1:ems="10"
+        android1:hint="Enter Mobile No"
+        android1:inputType="phone" />
+
+    <AutoCompleteTextView
+        android1:id="@+id/AutoCompleteTextView11"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentRight="true"
+        android1:layout_below="@+id/editText13"
+        android1:layout_marginTop="19dp"
+        android1:ems="10"
+        android1:hint="Choose category" />
+
+    <Button
+        android1:id="@+id/button1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignRight="@+id/imagebuttonimage"
+        android1:layout_below="@+id/AutoCompleteTextView11"
+        android1:layout_marginTop="30dp"
+        android1:text="Ok" />
+
+    <Button
+        android1:id="@+id/button3"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBaseline="@+id/button2"
+        android1:layout_alignBottom="@+id/button2"
+        android1:layout_alignLeft="@+id/AutoCompleteTextView11"
+        android1:text="Quit" />
+
+</RelativeLayout>

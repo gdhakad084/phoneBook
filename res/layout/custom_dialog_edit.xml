@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateRecord" >
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="enter name" />
+
+    <Button
+        android:id="@+id/button142"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttontocancel"
+        android:layout_alignBottom="@+id/buttontocancel"
+        android:layout_alignParentRight="true"
+        android:text="Quit" />
+
+    <EditText
+        android:id="@+id/contactText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="enter contact no"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/contactText"
+        android:ems="10"
+        android:hint="enter email address"
+        android:inputType="textEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttontoupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttontocancel"
+        android:layout_alignBottom="@+id/buttontocancel"
+        android:layout_alignParentLeft="true"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/buttontocancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailText"
+        android:layout_centerHorizontal="true"
+        android:text="cancel" />
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editText1111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="To"
+        android:layout_weight=".115"
+        android:inputType="textEmailAddress" >
+        
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2222"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:gravity="top"
+        android:hint="Subject"
+        android:layout_weight=".115"
+        />
+
+    <EditText
+        android:id="@+id/editText3333"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Message"
+        android:gravity="top"
+        android:layout_weight=".625"
+        android:inputType="textMultiLine" />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      
+      android:orientation="horizontal"
+      >
+    <Button
+        android:id="@+id/button143"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Send"
+        android:layout_weight="0.33" />
+
+    <Button
+        android:id="@+id/button1cancel"
+        android:layout_width="0dp"
+        android:layout_weight="0.33"
+        android:layout_height="match_parent"
+        android:text="cancel" />
+    <Button
+        android:id="@+id/buttonquit"
+        android:layout_width="0dp"
+        android:layout_weight="0.33"
+        android:layout_height="match_parent"
+        android:text="quit" />
+</LinearLayout>
+</LinearLayout>
